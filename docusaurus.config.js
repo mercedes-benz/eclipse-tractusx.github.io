@@ -75,6 +75,12 @@ const config = {
             docId: 'kits',
             label: 'KITs',
           },
+          {
+            type: 'doc',
+            position: 'left',
+            docId: 'charts',
+            label: 'Charts',
+          },
           /* {to: '/blog', label: 'Blog', position: 'left'}, */
           {
             href: 'https://github.com/eclipse-tractusx/eclipse-tractusx.github.io',
