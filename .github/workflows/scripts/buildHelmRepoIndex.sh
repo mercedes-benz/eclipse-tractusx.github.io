@@ -32,9 +32,9 @@ echo $HELM_REPO_BASEDIR
   #repo_name=$(cut -d '/' -f2 <<< "$1") # obsolete, delete later
 release_location=$(curl -s https://api.github.com/repos/"$1"/releases/latest | grep "browser_download_url" | awk '{print $2}' | sed 's/"//g')
 release_name=$(basename "$release_location")
-chart_name=$(echo "$release_name" | sed 's/[0-9.]//g' | sed 's/-tgz$//')
-  
-  # Create chart directory if non existent
+chart_name=$(echo "$release_name" | sed -E 's/-[0-9.]+tgz//g')
+
+# Create chart directory if non existent
 if [ ! -d "$HELM_REPO_BASEDIR/$chart_name" ]; then
 mkdir -p "$HELM_REPO_BASEDIR/$chart_name"
 fi
