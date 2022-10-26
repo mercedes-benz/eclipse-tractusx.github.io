@@ -41,7 +41,7 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          version: 'v3.10.1'
 
       - name: Build/Update Helm Chart Repo
         run: ./.github/scripts/buildHelmRepoIndex.sh ${{ inputs.github_repo }} dev
