@@ -20,16 +20,15 @@
 # SPDX-License-Identifier: Apache-2.0
 ###############################################################################
 
-if [ $2 == "dev" ]; then
+#if [ $2 == "dev" ]; then
 HELM_REPO_BASEDIR="static/charts/dev"
-else
-HELM_REPO_BASEDIR="static/charts/stable"
-fi
+#else
+#HELM_REPO_BASEDIR="static/charts/stable"
+#fi
 
 echo $HELM_REPO_BASEDIR
-  
-  # extract location, release and chart name from input $1
-  #repo_name=$(cut -d '/' -f2 <<< "$1") # obsolete, delete later
+
+# extract location, release and chart name from input $1
 release_location=$(curl -s https://api.github.com/repos/"$1"/releases/latest | grep "browser_download_url" | awk '{print $2}' | sed 's/"//g')
 release_name=$(basename "$release_location")
 chart_name=$(echo "$release_name" | sed -E 's/-[0-9.]+tgz//g')
@@ -40,9 +39,14 @@ mkdir -p "$HELM_REPO_BASEDIR/$chart_name"
 fi
 
 if [ ! -f "$HELM_REPO_BASEDIR/$chart_name/$release_name" ]; then
-  # download released helm chart
+# download released helm chart
 curl -L -o "$HELM_REPO_BASEDIR/$chart_name/$release_name" "$release_location"
 
-  # create/update helm repo index
-helm repo index --merge "$HELM_REPO_BASEDIR/dev/index.yaml" "$HELM_REPO_BASEDIR"
+# create/update helm repo index
+helm repo index --merge "$HELM_REPO_BASEDIR/index.yaml" "$HELM_REPO_BASEDIR"
+
+# set notifier for trailing steps
+echo "commit_required=1" >> "$GITHUB_OUTPUT"
+else
+  echo "commit_required=0" >> "$GITHUB_OUTPUT"
 fi
