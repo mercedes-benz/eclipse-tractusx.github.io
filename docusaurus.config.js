@@ -111,7 +111,7 @@ const config = {
             position: "right",
             label: "SUBMIT APP",
             style: {
-              background: "orange",
+              background: "#FAA023",
               color: "#fff",
               padding: "0.5 rem 1rem",
               borderRadius: "5px",
