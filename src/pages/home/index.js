@@ -5,6 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 
 import HomePageBanner from "../../components/HomePageBanner/index";
+import AboutUsCard from "../../components/AboutUsCard";
 
 import styles from "./styles.module.css";
 
@@ -16,7 +17,9 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <HomePageBanner />
-      <main></main>
+      <main>
+        <AboutUsCard />
+      </main>
     </Layout>
   );
 }
