@@ -7,11 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   position: relative;
   overflow: hidden;
   color: #fff;
-  height: 90vh;
+  height: 94vh;
   background-image: url("/static/img/original_bg.png");
   background-position: bottom;
   background-repeat: no-repeat;

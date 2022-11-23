@@ -4,6 +4,7 @@ import React from "react";
 import Link from "@docusaurus/Link";
 
 import styles from "./styles.module.css";
+import NewsTicker from "../NewsTicker";
 
 function HomePageBanner() {
   //   const { siteConfig } = useDocusaurusContext();
@@ -27,6 +28,7 @@ function HomePageBanner() {
           </Link>
         </div>
       </div>
+      <NewsTicker />
     </header>
   );
 }
