@@ -148,6 +148,43 @@ const config = {
               },
             ],
           },
+          {
+            title: "About Tractus X",
+            items: [
+              {
+                label: "About Us",
+                to: "/about-us",
+              },
+              {
+                label: "Impressum",
+                to: "/",
+              },
+            ],
+          },
+          {
+            title: "Information",
+            items: [
+              {
+                label: "Data Protection",
+                to: "/",
+              },
+              {
+                label: "Cookies Settings",
+                to: "/",
+              },
+            ],
+          },
+          {
+            title: "Contact",
+            items: [
+              {
+                html: "<p >catena_x@catenaxxx.com</p>",
+              },
+              {
+                html: "<p>(00)-0000-00-000</p>",
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Eclipse Tractus-X. Built with Docusaurus.`,
       },
