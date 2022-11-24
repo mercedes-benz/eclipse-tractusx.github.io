@@ -4,11 +4,11 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 
-import HomePageBanner from "../../components/HomePageBanner/index";
-import AboutUsCard from "../../components/AboutUsCard";
-import HowSubmitCard from "../../components/HowSubmitCard";
-import StayTunedCard from "../../components/StayTunedCard";
-import SurveyCard from "../../components/SurveyCard";
+import HomePageBanner from "../components/HomePageBanner/index";
+import AboutUsCard from "../components/AboutUsCard";
+import HowSubmitCard from "../components/HowSubmitCard";
+import StayTunedCard from "../components/StayTunedCard";
+import SurveyCard from "../components/SurveyCard";
 
 import styles from "./styles.module.css";
 

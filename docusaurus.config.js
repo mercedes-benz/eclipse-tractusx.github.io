@@ -61,7 +61,7 @@ const config = {
         logo: {
           alt: "Eclipse Tractus-X logo",
           src: "img/logo_catena.svg",
-          href: "/home",
+          href: "/",
         },
         items: [
           // {
@@ -78,7 +78,7 @@ const config = {
           // },
           /* {to: '/blog', label: 'Blog', position: 'left'}, */
           {
-            to: "/home",
+            to: "/",
             position: "right",
             label: "HOME",
           },
