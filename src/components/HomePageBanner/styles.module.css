@@ -46,6 +46,12 @@
   border-radius: 5px;
 }
 
+.button:hover {
+  background-color: #1e1e1e;
+  color: #faa023;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

@@ -33,6 +33,12 @@
   border-radius: 5px;
 }
 
+.button:hover {
+  background-color: #1e1e1e;
+  color: #faa023;
+  text-decoration: none;
+}
+
 .date {
   color: #dcdee4;
   margin: 0 1rem;
