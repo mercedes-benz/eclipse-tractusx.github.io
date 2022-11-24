@@ -14,7 +14,7 @@ export default function AboutUsCard() {
 
         <div className={styles.information_container}>
           <h2 className={styles.title}>About Eclipse Tractus-X</h2>
-          <p className={styles.description}>
+          <p className={styles.subtitle}>
             Background about Eclipse Tractus-X, license and legal information.
           </p>
           <div>

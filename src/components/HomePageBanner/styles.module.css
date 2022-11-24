@@ -23,8 +23,8 @@
   padding: 0 2rem;
 }
 
-h1,
-p {
+.title,
+.subtitle {
   font-family: "Manrope", sans-serif;
 }
 
@@ -67,6 +67,6 @@ p {
 
   .button {
     padding: 0.5rem 1rem;
-    font-size: small;
+    font-size: 1.8vw;
   }
 }

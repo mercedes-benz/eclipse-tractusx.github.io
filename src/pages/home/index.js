@@ -7,6 +7,7 @@ import Layout from "@theme/Layout";
 import HomePageBanner from "../../components/HomePageBanner/index";
 import AboutUsCard from "../../components/AboutUsCard";
 import HowSubmitCard from "../../components/HowSubmitCard";
+import StayTunedCard from "../../components/StayTunedCard";
 
 import styles from "./styles.module.css";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <AboutUsCard />
         <HowSubmitCard />
+        <StayTunedCard />
       </main>
     </Layout>
   );

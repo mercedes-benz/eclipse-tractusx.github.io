@@ -47,8 +47,15 @@
 }
 
 @media screen and (max-width: 996px) {
+  .title {
+    font-size: 5vw;
+  }
+
+  .subtitle {
+    font-size: 2vw;
+  }
   .button {
     padding: 0.5rem 1rem;
-    font-size: 1vw;
+    font-size: 1.8vw;
   }
 }
