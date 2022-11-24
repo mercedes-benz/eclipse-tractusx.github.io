@@ -8,6 +8,7 @@ import HomePageBanner from "../../components/HomePageBanner/index";
 import AboutUsCard from "../../components/AboutUsCard";
 import HowSubmitCard from "../../components/HowSubmitCard";
 import StayTunedCard from "../../components/StayTunedCard";
+import SurveyCard from "../../components/SurveyCard";
 
 import styles from "./styles.module.css";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <AboutUsCard />
         <HowSubmitCard />
         <StayTunedCard />
+        <SurveyCard />
       </main>
     </Layout>
   );
